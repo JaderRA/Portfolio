@@ -1,9 +1,6 @@
-function sleep(ms) {
-    return new Promise(
-      resolve => setTimeout(resolve, ms)
-    );
+function openLink(url){
+    window.open(url, "_blank");
 }
-  
 
 function printLetterByLetter(destination, message, speed){    
     var i = 0;

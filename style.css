@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Cabeçalho */
 
 .nav-container{
@@ -33,6 +43,11 @@ header ul li{
     padding: 10px;
 }
 
+a{
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+}
+
 a:link{
     text-decoration: none;
 
@@ -40,8 +55,6 @@ a:link{
 
 a:visited {
     text-decoration: none;
-    font-family: 'Inconsolata', monospace;
-    color: #fff;
 }
 
 #contato{
@@ -80,8 +93,10 @@ a:visited {
     width: 100%;
     background-color:rgba(17, 16, 16, 0.966);
     display: flex;
-    justify-content: flex-start;
+    column-gap: 5%;
+    justify-content: center;
     align-items: top;
+    padding: 5%;
 }
 
 .about-container h2{
@@ -101,12 +116,11 @@ a:visited {
 
 .banner-foto{
     text-align: right;
-    margin: 5%;
     width: 40%;
 }
 
 .about-text{
-    margin-top: 10%;
+    padding-top: 7%;
     width: 40%;
     color: rgba(255, 255, 255, 0.829);
     font-family: 'Inconsolata', monospace;
@@ -140,15 +154,12 @@ a:visited {
 
 .portfolio-cards{
     display: flex;
+    row-gap: 30px;
+    justify-content: space-around;
+    align-content: space-around;
     flex-wrap:wrap;
     margin: 20px;
 }
-
-.portfolio-cards div{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 
 .portfolio-link{
     margin: 60px 0 60px 0;
@@ -182,6 +193,7 @@ a:link{
     width: 300px;
     text-align: center;
     display: inline;
+    cursor: pointer;
 }
 
 .template:hover {
@@ -209,7 +221,7 @@ a:link{
 }
 
 .text-contact h2{
-    padding: 60px 0 20px 0;
+    padding: 20px 0 20px 0;
     font-weight: bold;
     font-size: 1.8rem;
     margin-left: 30px;
@@ -227,18 +239,30 @@ a:link{
 
 /*Responsividade para mobile*/
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 800px){
 
-    .portfolio-cards div{
-        margin: 0 0 20px 0;        
-    }    
-    
+    /*About*/
+    .about-container{
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .banner-foto{
+        width: 90%;
+    }
+
+    .about-text{
+        width: 90%;
+    }
+
+    /*Cards*/    
     .portfolio-container{
         height: 100%;
     }
 
     .portfolio-cards{
-        display: inline-block;
+        flex-direction: column;
+        align-items: center;  
     }
 
 }
