@@ -23,11 +23,8 @@ window.onload=function(){
     let img=document.getElementsByName("img-card");
     for (let i=0; i<divExterna.length; i++){        
         divExterna[i].addEventListener('mouseover', function handleMouseOver(){
-            pimba[i].classList.remove("show");
             pimba[i].classList.add("hidden");
             text[i].classList.remove("hidden");
-            text[i].classList.add("show");
-            img[i].classList.remove("show");
             img[i].classList.add("hidden");
                       
         });
@@ -36,11 +33,8 @@ window.onload=function(){
     for (let j=0; j<divExterna.length; j++){        
         divExterna[j].addEventListener('mouseout', function handleMouseOut(){
             pimba[j].classList.remove("hidden");
-            pimba[j].classList.add("show");
-            text[j].classList.remove("show");
             text[j].classList.add("hidden");
             img[j].classList.remove("hidden");
-            img[j].classList.add("show");
                    
         });
     }
