@@ -88,6 +88,10 @@ a:visited {
     margin: 10px;
 }
 
+#link-projetos-mobile{
+    display: none;
+}
+
 /* About*/
 .about-container{
     width: 100%;
@@ -253,6 +257,16 @@ a:link{
 }
 
 @media screen and (max-width: 800px){
+
+    /*Navegação*/
+
+    #link-projetos-mobile{
+        display: flex;
+    }
+
+    #link-projetos{
+        display: none;
+    }
 
     /*About*/
     .about-container{
