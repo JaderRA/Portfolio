@@ -2,18 +2,20 @@ function openLink(url){
     window.open(url, "_blank");
 }
 
-function printLetterByLetter(destination, message, speed){    
-    var i = 0;
-    var interval = setInterval(function(){
-        document.getElementById(destination).innerHTML += message.charAt(i);
-        i++;
-        if (i > message.length){
-            clearInterval(interval);
-        }
-    }, speed);
-
-}
-printLetterByLetter("helloworld", "Hello world!", 85);
+window.setInterval(() =>{
+    function printLetterByLetter(destination, message, speed){    
+        var i = 0;
+        var interval = setInterval(function(){
+            document.getElementById(destination).innerHTML += message.charAt(i);
+            i++;
+            if (i > message.length){
+                clearInterval(interval);
+            }
+        }, speed);    
+    }    
+    printLetterByLetter("helloworld", "Hello world!", 85);
+    document.getElementById("helloworld").innerHTML = '';
+}, 3000);
 
 
 window.onload=function(){

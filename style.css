@@ -104,7 +104,7 @@ a:visited {
 }
 
 .sobre{
-    padding: 30px 0 30px 0;
+    padding: 45px 0 30px 0;
     font-weight: bold;
     font-size: 1.8rem;
 }
@@ -142,6 +142,7 @@ a:visited {
 #helloworld{
     font-weight: bold;
     color: rgba(224, 78, 52, 0.973);
+    height: 7px;
 }
 
 /* Meus trabalhos */
