@@ -8,5 +8,5 @@ Para ver o conteúdo basta extrair todo o conteúdo em na mesma estrutura de pas
 Ou é possível acessar esse site publicado em https://jaderra.github.io/Portfolio/
 
 # Roadmap
-[ ] Implementar botão de voltar ao topo.
+[ ] Implementar botão de voltar ao topo. \n
 [ ] Refatorar o código utilizando práticas de componentização e framework.
